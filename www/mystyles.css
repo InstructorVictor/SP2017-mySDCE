@@ -1,0 +1,49 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+}
+
+aside h1 {
+	font-size: 2em;
+	text-align: center;
+	/* We targted any H1 inside of an ASIDE. */
+}
+
+aside .ui-btn {
+	float: right;
+	/* We targeted a a jQM button in an Aside (via its built-in Class) */
+}
+
+.imgRound {
+	border-radius: 10%;
+}
+
+.imgResize {
+	width: 75%;
+	display: block;
+	margin: auto;
+	border: 1px solid gray;
+	padding: 1em;
+	background-color: antiquewhite;
+} /* Targets an image Class to resize it, and center it on-screen */
+
+h1 {
+	font-family: 'airstreamregular';
+	font-size: 3em;
+}
+
+.ui-dialog-contain>.ui-content {
+	background-color: cadetblue;
+}
+
+/*
+	Developer: 	Victor Campos <vcampos@victor.biz>
+	App:		mySDCE
+	Date:		2017-04-27
+	Description:The Unofficial mySDCE App. For non-commerical use, only!
+*/

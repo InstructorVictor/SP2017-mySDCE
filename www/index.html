@@ -1,0 +1,287 @@
+<!doctype html>
+<html> 
+	<head>
+		<!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<meta charset="utf-8">
+		<title>mySDCE</title>
+		<link rel="stylesheet" href="jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="airstream_regular_macroman/font.css">
+		<link rel="stylesheet" href="mycolors.min.css">
+		<link rel="stylesheet" href="mystyles.css">
+	</head>
+	<body>
+		<section data-role="page" id="home"><!-- START Home Section -->
+			<header data-role="header" data-position="fixed">
+				<h1>mySDCE</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-transition="flip" class="ui-btn-active ui-state-persist">Home</a></li>
+						<li><a href="#art"  data-icon="edit" data-transition="flip">Art</a></li>
+						<li><a href="#pc"   data-icon="gear" data-transition="flip">Computers</a></li>
+					</ul>
+				</nav>
+			</header>
+			<article role="main" class="ui-content">
+				<h2>Welcome<span class="userName"></span></h2>
+				<p>
+					<img src="images/welcome.png" class="imgRound">
+				</p>
+				<p>
+					Educational access and lifelong learning opportunities.
+				</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a href="#about" data-role="button" data-icon="info" data-transition="pop">About</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="#classes" data-role="button" data-icon="bars" data-transition="slideup" id="btnClasses">My Classes</a>
+					</div>
+					<div class="ui-block-a">
+						<!-- Empty -->
+					</div>
+					<div class="ui-block-b">
+						<!-- Empty -->
+					</div>
+				</div>
+			</article>
+			<footer data-role="footer" data-position="fixed">
+				<h4>Copyright &copy; 2017. vmcAPPS.biz</h4>
+			</footer>
+		</section><!-- END Home Section -->
+		
+		<section data-role="page" id="art"><!-- START Art Section -->
+			<aside data-role="panel" data-display="overlay" id="artCal">
+				<a href="#art" data-role="button" data-icon="delete" data-rel="close" data-iconpos="notext">Close</a>
+				<h1>Art Calendar</h1>
+				<h2>February</h2>
+					<ul>
+						<li>Student Show</li>
+						<li>Oil Exhibit</li>
+					</ul>
+				<h2>March</h2>
+					<ul>
+						<li>Faculty Show</li>
+						<li>Water Exhibit</li>
+						<li>Portfolio Review</li>
+					</ul>
+				<h2>April</h2>
+				<ul>
+						<li>Art Rodeo</li>
+					</ul>
+			</aside>
+			<header data-role="header" data-position="fixed">
+				<h1>Art Classes</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-transition="flip">Home</a></li>
+						<li><a href="#art"  data-icon="edit" data-transition="flip" class="ui-btn-active ui-state-persist">Art</a></li>
+						<li><a href="#pc"   data-icon="gear" data-transition="flip">Computers</a></li>
+					</ul>
+				</nav>
+			</header>
+			<article role="main" class="ui-content">
+				<h2>Take an art class<span class="userName"></span></h2>
+				<p>
+					<img src="images/art.png" class="imgRound">
+				</p>
+				<div data-role="collapsible-set">
+					<div data-role="collapsible">
+						<h3>Art 101</h3>
+						<p>Watercolor (American English) or watercolour (British English; see spelling differences), also aquarelle (French loanword), a diminutive of the Latin for water, is a painting method in which the paints are made of pigments suspended in a water-based solution. Watercolor refers to both the medium and the resulting artwork.
+
+							The traditional and most common support—material to which the paint is applied—for watercolor paintings is paper. Other supports include papyrus, bark papers, plastics, vellum, leather, fabric, wood and canvas. Watercolor paper is often made entirely or partially with cotton, which gives a good texture and minimizes distortion when wet.[1] Watercolors are usually translucent, and appear luminous because the pigments are laid down in a pure form with few fillers obscuring the pigment colors. Watercolors can also be made opaque by adding Chinese white.
+
+							In East Asia, watercolor painting with inks is referred to as brush painting or scroll painting. In Chinese, Korean and Japanese painting it has been the dominant medium, often in monochrome black or browns.[clarification needed] India, Ethiopia and other countries have long watercolor painting traditions as well.[citation needed] Fingerpainting with watercolor paints originated in mainland China.</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Art 102</h3>
+						<p>Oil painting is the process of painting with pigments with a medium of drying oil as the binder. Commonly used drying oils include linseed oil, poppy seed oil, walnut oil, and safflower oil. The choice of oil imparts a range of properties to the oil paint, such as the amount of yellowing or drying time. Certain differences, depending on the oil, are also visible in the sheen of the paints. An artist might use several different oils in the same painting depending on specific pigments and effects desired. The paints themselves also develop a particular consistency depending on the medium. The oil may be boiled with a resin, such as pine resin or frankincense, to create a varnish prized for its body and gloss.
+
+							Although oil paint was first used for Buddhist paintings by Indian and Chinese painters in western Afghanistan sometime between the fifth and tenth centuries,[1] it did not gain popularity until the 15th century. Its practice may have migrated westward during the Middle Ages. Oil paint eventually became the principal medium used for creating artworks as its advantages became widely known. The transition began with Early Netherlandish painting in Northern Europe, and by the height of the Renaissance oil painting techniques had almost completely replaced the use of tempera paints in the majority of Europe.
+
+							In recent years, water miscible oil paint has come to prominence and, to some extent, replaced traditional oil paint. Water-soluble paints contain an emulsifier that allows them to be thinned with water rather than paint thinner, and allows very fast drying times (1–3 days) when compared with traditional oils (1–3 weeks).</p>
+					</div>
+					<div data-role="collapsible">
+						<h3>Art 103</h3>
+						<p>Ink wash painting, also known as literati painting, is an East Asian type of brush painting of Chinese origin that uses black ink—the same as used in East Asian calligraphy—in various concentrations. For centuries, this form of Chinese art was practiced by highly educated scholar gentlemen or literati.
+
+							Names used in the cultures concerned include: in Chinese shuǐ mò huà (水墨畫), in Japanese sumi-e (墨絵) or suibokuga (水墨画?), in Korean sumukhwa (수묵화), and in Vietnamese tranh thuỷ mặc (幀水墨).</p>
+					</div>
+				</div>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<a data-url="http://sdce.edu/schedule#/all" data-role="button" data-icon="bullets" class="btnURL">Catalog</a>
+					</div>
+					<div class="ui-block-b">
+						<a href="#artCal" data-role="button" data-icon="calendar">Calendar</a>
+					</div>
+					<div class="ui-block-a">
+						<!-- Empty -->
+					</div>
+					<div class="ui-block-b">
+						<!-- Empty -->
+					</div>
+				</div>
+			</article>
+			<footer data-role="footer" data-position="fixed">
+				<h4>Copyright &copy; 2017. vmcAPPS.biz</h4>
+			</footer>
+		</section><!-- END Art Section -->
+		
+		<section data-role="page" id="pc"><!-- START PC Section -->
+			<header data-role="header" data-position="fixed">
+				<h1>Computer Classes</h1>
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home" data-transition="flip">Home</a></li>
+						<li><a href="#art"  data-icon="edit" data-transition="flip">Art</a></li>
+						<li><a href="#pc"   data-icon="gear" data-transition="flip" class="ui-btn-active ui-state-persist">Computers</a></li>
+					</ul>
+				</nav>
+			</header>
+			<article role="main" class="ui-content">
+				<h2>Learn about computers<span class="userName"></span></h2>
+				<p>
+					<img src="images/pc.png" class="imgRound">
+				</p>
+				<p>
+					<ul data-role="listview" data-inset="true">
+						<li data-role="list-divider" role="heading">
+							Basic Classes
+						</li>
+						<li>
+							<a href="#comBas101" data-transition="slide">COM101</a>
+						</li>
+						<li>
+							COM102
+						</li>
+						<li data-role="list-divider" role="heading">
+							Advanced Classes
+						</li>
+						<li>
+							COM201
+						</li>
+					</ul>
+				</p>
+			</article>
+			<footer data-role="footer" data-position="fixed">
+				<h4>Copyright &copy; 2017. vmcAPPS.biz</h4>
+			</footer>
+		</section><!-- END PC Section -->
+		
+		<section data-role="page" id="comBas101"><!-- START COM101 -->
+			<header data-role="header" data-position="fixed" data-add-back-btn="true">
+				<h1>COM101</h1>
+			</header>
+			<article role="main" class="ui-content">
+				<p>
+					MS-DOS (/ˌɛmɛsˈdɒs/ EM-es-DOSS; acronym for Microsoft Disk Operating System) is a discontinued operating system for x86-based personal computers mostly developed by Microsoft. Collectively, MS-DOS, its rebranding as IBM PC DOS, and some operating systems attempting to be compatible with MS-DOS, are sometimes referred to as "DOS" (which is also the generic acronym for disk operating system). MS-DOS was the main operating system for IBM PC compatible personal computers during the 1980s and the early 1990s, when it was gradually superseded by operating systems offering a graphical user interface (GUI), in various generations of the graphical Microsoft Windows operating system.
+
+MS-DOS resulted from a request in 1981 by IBM for an operating system to use in its IBM PC range of personal computers.[7][8] Microsoft quickly bought the rights to 86-DOS from Seattle Computer Products,[9] and began work on modifying it to meet IBM's specification. IBM licensed and released it in August 1981 as PC DOS 1.0 for use in their PCs. Although MS-DOS and PC DOS were initially developed in parallel by Microsoft and IBM, the two products diverged after twelve years, in 1993, with recognizable differences in compatibility, syntax, and capabilities.
+
+During its life, several competing products were released for the x86 platform,[10] and MS-DOS went through eight versions, until development ceased in 2000.[11] Initially MS-DOS was targeted at Intel 8086 processors running on computer hardware using floppy disks to store and access not only the operating system, but application software and user data as well. Progressive version releases delivered support for other mass storage media in ever greater sizes and formats, along with added feature support for newer processors and rapidly evolving computer architectures. Ultimately it was the key product in Microsoft's growth from a programming languages company to a diverse software development firm, providing the company with essential revenue and marketing resources. It was also the underlying basic operating system on which early versions of Windows ran as a GUI. It is a flexible operating system, and consumes negligible installation space.
+				</p>
+			</article>
+		</section><!-- END COM101 -->
+		
+		<section data-role="page" data-dialog="true" id="about"><!-- START About Section -->
+			<header data-role="header" data-position="fixed">
+				<h1>About</h1>
+			</header>
+			<article role="main" class="ui-content artAbout">
+				<h2>San Diego Continuing Ed.</h2>
+				<p>
+					<img src="images/ce_doseal_vertical_bw.png" class="imgResize">
+				</p>
+				<p>
+					San Diego Continuing Education commits to student success and community enrichment by providing accessible, equitable, and innovative quality education and support services to diverse adult learners in pursuit of lifelong learning, training, career advancement, and pathways to college.
+				</p>
+				<p>
+					<a href="#" data-role="button" data-icon="user" id="btnName">Personalize</a>
+				</p>
+				<p>
+					<a href="#" data-role="button" data-icon="mail" id="btnContactUs">Contact Us</a>
+				</p>
+				<p>
+					<a href="#" data-role="button" data-icon="action" id="btnShareIt">Share the App</a>
+				</p>
+				<p>
+					<input type='button' data-icon="delete" value='RESET CLASSES' id='btnNuke'>
+				</p>
+			</article>
+		</section><!-- END About Section -->
+		
+		<section data-role="page" id="classes">
+			<header data-role="header" data-position="fixed" data-add-back-btn="true">
+				<h1>My Classes</h1>
+			</header>
+			<article role="main" class="ui-content">
+				<form id="formClass">
+					<label for="inCRN">CRN: </label>		<input type="text" placeholder="9618B" 		name="inCRN" 	id="inCRN"><br>
+					<label for="inClass">Class: </label>	<input type="text" placeholder="Android I" 	name="inClass" 	id="inClass"><br>
+					<label for="inInst">Instructor: </label><input type="text" placeholder="Campos" 	name="inInst" 	id="inInst"><br>
+					  
+					<div class="ui-grid-b">
+						<div class="ui-block-a">
+							<input type="button" value="Go" id="btnGo">
+						</div>
+						<div class="ui-block-b">
+							<input type="reset" value="Cancel" id="btnCancel">
+						</div>
+						<div class="ui-block-c">
+							<input type="button" value="Show" id="btnShow">
+						</div>
+					</div>
+				</form>
+				<div id="divResults"></div>
+				
+				<!-- Creates a Tool Tip Style Pop-up -->
+				<div data-role="popup" data-dialog="true" id="popClassUpdate">
+					<header data-role="header">
+						<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close!</a>
+						<h1 id="h1Update">Edit Class</h1>
+					</header>
+					<article role="main" class="ui-content">
+						<div id="divEdit">
+						
+						</div>
+					</article>
+				</div>
+			
+			</article>
+		</section><!-- END PouchDB Class Section -->
+		
+		<section data-role="page" id="template"><!-- Reuse for future screens -->
+			<header data-role="header" data-position="fixed">
+				<h1>HEADER TEXT</h1>
+			</header>
+			<article role="main" class="ui-content">
+			</article>
+			<footer data-role="footer" data-position="fixed">
+			</footer><!-- Reuse for future screens -->
+		</section>
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="jquery.mobile-1.4.5.min.js"></script>
+	<script src="cordova.js"></script>
+	<script src="pouchdb-6.1.2.min.js"></script>
+	<script src="myscript.js"></script>
+	</body>
+	<!--
+		Developer: 	Victor Campos <vcampos@victor.biz>
+		App:		mySDCE
+		Date:		2017-04-27
+		Description:The Unofficial mySDCE App. For non-commerical use, only!
+	-->
+</html>
